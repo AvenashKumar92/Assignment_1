@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="host"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lblPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="185dp"
+        android:layout_toRightOf="@+id/lblHost"
+        android:text="port"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lblUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="username"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="password"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPassword"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:text="Login" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblUsername"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblPassword"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/txtPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPort"
+        android:layout_marginLeft="235dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="number"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/txtHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblHost"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+</RelativeLayout>
